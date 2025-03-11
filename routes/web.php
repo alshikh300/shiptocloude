@@ -14,6 +14,7 @@ Route::middleware(['auth'])->group(function () {
     })->name('dashboard');
 });
 Route::get('/pay', [HomeController::class, 'index']);
+Route::get('/order', [HomeController::class, 'order']);
 
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';
